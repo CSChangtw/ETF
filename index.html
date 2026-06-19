@@ -468,14 +468,11 @@ window.addEventListener('offline',()=>{ document.getElementById('offlineBanner')
 
 // ═══ SERVICE WORKER ═══
 if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('sw.js').then(reg=>{
-    reg.addEventListener('updatefound',()=>{
-      const nw=reg.installing;
-      nw.addEventListener('statechange',()=>{
-        if(nw.state==='installed'&&navigator.serviceWorker.controller)
-          document.getElementById('updateBanner').classList.add('show');
-      });
-    });
+  // 先清除所有舊 SW，再重新註冊
+  navigator.serviceWorker.getRegistrations().then(regs=>{
+    regs.forEach(r=>r.unregister());
+  }).then(()=>{
+    navigator.serviceWorker.register('sw.js');
   });
 }
 
