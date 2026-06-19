@@ -1,0 +1,54 @@
+name: 📊 ETF 數據每日更新
+
+on:
+  schedule:
+    - cron: '30 7 * * 1-5'
+    - cron: '30 21 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install dependencies
+        run: pip install yfinance pandas requests
+
+      - name: 🔄 Fetch ETF data
+        run: python scripts/fetch_etf_data.py --output etf_data.json
+        timeout-minutes: 10
+
+      - name: ✅ Validate JSON
+        run: |
+          python -c "
+          import json, sys
+          with open('etf_data.json') as f:
+              d = json.load(f)
+          count = d.get('count', 0)
+          print(f'ETF 數量: {count}')
+          if count < 5:
+              print('ERROR: 數據不足')
+              sys.exit(1)
+          print('JSON 驗證通過')
+          "
+
+      - name: 💾 Commit & Push data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add etf_data.json
+          git diff --staged --quiet || git commit -m "📊 ETF data update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
