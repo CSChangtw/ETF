@@ -377,8 +377,8 @@ async function loadData(){
   }
 
   try{
-    const url='https://cschangtw.github.io/ETF/etf_data.json?t='+Date.now();
-    const res=await fetch(url,{cache:'no-store'});
+    const url='./etf_data.json?t='+Date.now();
+    const res=await fetch(url,{cache:'no-cache'});
     if(!res.ok)throw new Error('HTTP '+res.status);
     const d=await res.json();
     S.data=d.etfs||[];
