@@ -262,10 +262,7 @@ const hs=(v,mx=20)=>{
 
 // ═══ RENDER ═══
 function render(){
-  let list=[...S.data];
-  if(S.mkt!=='all')list=list.filter(e=>e.market===S.mkt);
-  const q=S.q.toLowerCase();
-  if(q)list=list.filter(e=>e.symbol.toLowerCase().includes(q)||e.name.toLowerCase().includes(q));
+  let list=filteredList();
   const key=KEYS[S.col];
   if(S.col>0){
     list.sort((a,b)=>{
@@ -345,8 +342,18 @@ document.getElementById('mTabs').addEventListener('click',e=>{
   const b=e.target.closest('.mtab');if(!b)return;
   document.querySelectorAll('.mtab').forEach(t=>t.classList.remove('on'));
   b.classList.add('on');S.mkt=b.dataset.m;render();
+  if(document.getElementById('chartView').style.display!=='none')renderChart(filteredList());
 });
 document.getElementById('srch').addEventListener('input',e=>{S.q=e.target.value;render();});
+
+// ═══ FILTERED LIST（排名與圖表共用）═══
+function filteredList(){
+  let list=[...S.data];
+  if(S.mkt!=='all')list=list.filter(e=>e.market===S.mkt);
+  const q=S.q.toLowerCase();
+  if(q)list=list.filter(e=>e.symbol.toLowerCase().includes(q)||e.name.toLowerCase().includes(q));
+  return list;
+}
 
 // ═══ VIEW SWITCH ═══
 const VIEWS=['rankView','chartView','aboutView'];
@@ -354,7 +361,7 @@ function swView(id,btn){
   VIEWS.forEach(v=>{document.getElementById(v).style.display=v===id?'block':'none';});
   document.querySelectorAll('.nb').forEach(b=>b.classList.remove('on'));
   if(btn)btn.classList.add('on');
-  if(id==='chartView')renderChart(S.data);
+  if(id==='chartView')renderChart(filteredList());
 }
 VIEWS.forEach(v=>{document.getElementById(v).style.display=v==='rankView'?'block':'none';});
 
@@ -377,8 +384,8 @@ async function loadData(){
   }
 
   try{
-    const url='./etf_data.json?t='+Date.now();
-    const res=await fetch(url,{cache:'no-cache'});
+    const url='https://cschangtw.github.io/ETF/etf_data.json?t='+Date.now();
+    const res=await fetch(url,{cache:'no-store'});
     if(!res.ok)throw new Error('HTTP '+res.status);
     const d=await res.json();
     S.data=d.etfs||[];
