@@ -320,7 +320,8 @@ const hs=(v,mx=20)=>{
 // ═══ RENDER ═══
 function render(){
   let list=[...S.data];
-  if(S.mkt!=='all')list=list.filter(e=>e.market===S.mkt);
+  if(S.mkt==='TW')list=list.filter(e=>e.market==='TW');
+  else if(S.mkt==='OTHER')list=list.filter(e=>e.market!=='TW');
   const q=S.q.toLowerCase();
   if(q)list=list.filter(e=>e.symbol.toLowerCase().includes(q)||e.name.toLowerCase().includes(q));
   const key=KEYS[S.col];
@@ -335,9 +336,7 @@ function render(){
   document.getElementById('tb').innerHTML=list.map((e,i)=>{
     const b=e.market==='TW'
       ?'<span class="badge btw">台</span>'
-      :e.market==='OTHER'
-      ?'<span class="badge both">他</span>'
-      :'<span class="badge bus">美</span>';
+      :'<span class="badge both">他</span>';
     return `<tr onclick="goTrend('${e.symbol}')" style="cursor:pointer">
       <td class="rk">${i+1}</td>
       <td>${b}<strong style="font-size:13px">${e.symbol}</strong></td>
@@ -382,7 +381,7 @@ function renderChart(list){
   document.getElementById('ctTitle').textContent=`${PLBL[S.col]||'月報酬'}排名（前${top.length}檔）`;
   document.getElementById('bc').innerHTML=top.map(e=>{
     const v=e[k],p=Math.abs(v)/mx*100;
-    const b=e.market==='TW'?'<span class="badge btw" style="font-size:8px">台</span>':'<span class="badge bus" style="font-size:8px">美</span>';
+    const b=e.market==='TW'?'<span class="badge btw" style="font-size:8px">台</span>':'<span class="badge both" style="font-size:8px">他</span>';
     return `<div class="br"><div class="bsy">${b}${e.symbol}</div><div class="btr"><div class="bf ${v>=0?'pos':'neg'}" style="width:${p}%">${fr(v)}</div></div></div>`;
   }).join('');
 }
@@ -473,7 +472,7 @@ function tvInit(){
   const sel=document.getElementById('tvSymSel');
   const prev=sel.value||tvSym||(S.data[0]&&S.data[0].symbol)||'';
   sel.innerHTML=S.data.map(e=>{
-    const mkt=e.market==='TW'?'[台]':e.market==='OTHER'?'[他]':'[美]';
+    const mkt=e.market==='TW'?'[台]':'[他]';
     return `<option value="${e.symbol}" ${e.symbol===prev?'selected':''}>${mkt} ${e.symbol} ${e.name}</option>`;
   }).join('');
   tvSym=sel.value;
@@ -532,9 +531,7 @@ async function tvDraw(){
   // 更新 header
   const badge=etf.market==='TW'
     ?'<span class="badge btw">台</span>'
-    :etf.market==='OTHER'
-    ?'<span class="badge both">他</span>'
-    :'<span class="badge bus">美</span>';
+    :'<span class="badge both">他</span>';
   document.getElementById('tvSym').innerHTML=badge+tvSym;
   document.getElementById('tvName').textContent=etf.name;
 
