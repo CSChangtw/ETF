@@ -122,31 +122,30 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:16px 18p
 ::-webkit-scrollbar-track{background:var(--bg)}
 ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
 
-/* ── DETAIL MODAL ── */
-#detailModal{display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.75);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);align-items:flex-end;justify-content:center}
-#detailModal.show{display:flex}
-.dm-panel{background:var(--bg2);border:1px solid var(--border);border-radius:20px 20px 0 0;width:100%;max-width:680px;padding:0 0 calc(20px + var(--sfb));max-height:90dvh;overflow-y:auto;animation:slideUp .3s cubic-bezier(.4,0,.2,1)}
-@keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
-.dm-drag{width:40px;height:4px;background:var(--border);border-radius:2px;margin:12px auto 0}
-.dm-header{padding:14px 18px 10px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.dm-sym{font-size:20px;font-weight:700;color:var(--text)}
-.dm-name{font-size:12px;color:var(--muted)}
-.dm-price{font-size:24px;font-weight:700;color:var(--gold);margin-left:auto}
-.dm-close{background:var(--bg3);border:1px solid var(--border);border-radius:50%;width:32px;height:32px;cursor:pointer;color:var(--muted);font-size:18px;line-height:30px;text-align:center;flex-shrink:0;transition:color .2s}
-.dm-close:hover{color:var(--red)}
-.dm-periods{display:flex;gap:6px;padding:10px 18px;flex-wrap:wrap}
-.dp{padding:5px 13px;border-radius:14px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-size:12px;font-weight:500;transition:all .15s}
-.dp:hover{border-color:var(--accent);color:var(--accent)}
-.dp.on{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:700}
-.dm-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0 18px 14px}
-.ds{background:var(--bg3);border-radius:var(--r);padding:10px 12px;text-align:center}
-.ds-l{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
-.ds-v{font-size:15px;font-weight:700}
-.dm-chart{padding:0 18px 8px;position:relative}
-.dm-chart svg{width:100%;display:block;overflow:visible}
-.dm-tooltip{position:absolute;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:6px 10px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .15s;white-space:nowrap;z-index:10;top:8px;left:50%;transform:translateX(-50%)}
-.dm-loading{text-align:center;padding:40px;color:var(--muted);font-size:13px}
-.dm-spinner{display:inline-block;width:24px;height:24px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;margin-bottom:8px;vertical-align:middle;margin-right:8px}
+/* ── TREND VIEW ── */
+#trendView{padding:14px 16px calc(80px + var(--sfb));display:none}
+.tv-select{display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.tv-select label{font-size:12px;color:var(--muted)}
+#tvSymSel{flex:1;min-width:140px;background:var(--bg2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:7px 10px;font-size:13px;outline:none;cursor:pointer}
+#tvSymSel:focus{border-color:var(--accent)}
+.tv-periods{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px}
+.tvp{padding:5px 12px;border-radius:14px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-size:12px;font-weight:500;transition:all .15s}
+.tvp:hover{border-color:var(--accent);color:var(--accent)}
+.tvp.on{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:700}
+.tv-info{display:flex;align-items:baseline;gap:8px;margin-bottom:10px}
+.tv-sym{font-size:18px;font-weight:700;color:var(--text)}
+.tv-name{font-size:12px;color:var(--muted)}
+.tv-ret{font-size:22px;font-weight:700;margin-left:auto}
+.tv-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.tvs{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:10px 12px;text-align:center}
+.tvs-l{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.tvs-v{font-size:15px;font-weight:700}
+.tv-chart{position:relative;background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:12px 8px 8px;margin-bottom:14px}
+.tv-chart svg{width:100%;display:block;overflow:visible}
+.tv-tip{position:absolute;top:8px;left:50%;transform:translateX(-50%);background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:5px 12px;font-size:12px;pointer-events:none;opacity:0;transition:opacity .15s;white-space:nowrap;z-index:5}
+.tv-loading{text-align:center;padding:48px 0;color:var(--muted);font-size:13px}
+.tv-spinner{display:inline-block;width:22px;height:22px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:8px}
+.tv-src{font-size:10.5px;color:var(--muted);text-align:center;margin-top:4px}
 </style>
 </head>
 <body>
@@ -257,12 +256,42 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:16px 18p
   <p style="margin-top:14px;font-size:11px">版本 3.0 ｜ NKUST CSChang ｜ 更新時間：<span id="aboutTime">—</span></p>
 </div>
 
+<!-- ④ 趨勢 -->
+<div id="trendView">
+  <div class="tv-select">
+    <label>選擇 ETF：</label>
+    <select id="tvSymSel" onchange="tvChangeSym()"></select>
+  </div>
+  <div class="tv-info">
+    <div class="tv-sym" id="tvSym">—</div>
+    <div class="tv-name" id="tvName">—</div>
+    <div class="tv-ret" id="tvRet">—</div>
+  </div>
+  <div class="tv-periods">
+    <button class="tvp on" data-d="30">1個月</button>
+    <button class="tvp" data-d="90">3個月</button>
+    <button class="tvp" data-d="180">6個月</button>
+    <button class="tvp" data-d="365">1年</button>
+    <button class="tvp" data-d="730">2年</button>
+  </div>
+  <div class="tv-chart">
+    <div class="tv-loading" id="tvLoading"><span class="tv-spinner"></span>載入中…</div>
+    <svg id="tvSvg" style="display:none"></svg>
+    <div class="tv-tip" id="tvTip"></div>
+  </div>
+  <div class="tv-stats" id="tvStats"></div>
+  <div class="tv-src" id="tvSrc"></div>
+</div>
+
 <nav class="bnav">
   <button class="nb on" onclick="swView('rankView',this)">
     <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>排名
   </button>
   <button class="nb" onclick="swView('chartView',this)">
     <svg viewBox="0 0 24 24"><rect x="18" y="3" width="4" height="18"/><rect x="10" y="8" width="4" height="13"/><rect x="2" y="13" width="4" height="8"/></svg>圖表
+  </button>
+  <button class="nb" onclick="swView('trendView',this)">
+    <svg viewBox="0 0 24 24"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>趨勢
   </button>
   <button class="nb" onclick="swView('aboutView',this)">
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>關於
@@ -303,7 +332,7 @@ function render(){
   }
   document.getElementById('tb').innerHTML=list.map((e,i)=>{
     const b=e.market==='TW'?'<span class="badge btw">台</span>':'<span class="badge bus">美</span>';
-    return `<tr onclick="showDetail('${e.symbol}','${e.market}')" style="cursor:pointer">
+    return `<tr onclick="goTrend('${e.symbol}')" style="cursor:pointer">
       <td class="rk">${i+1}</td>
       <td>${b}<strong style="font-size:13px">${e.symbol}</strong></td>
       <td class="nc">${e.name}</td>
@@ -375,12 +404,13 @@ document.getElementById('mTabs').addEventListener('click',e=>{
 document.getElementById('srch').addEventListener('input',e=>{S.q=e.target.value;render();});
 
 // ═══ VIEW SWITCH ═══
-const VIEWS=['rankView','chartView','aboutView'];
+const VIEWS=['rankView','chartView','trendView','aboutView'];
 function swView(id,btn){
   VIEWS.forEach(v=>{document.getElementById(v).style.display=v===id?'block':'none';});
   document.querySelectorAll('.nb').forEach(b=>b.classList.remove('on'));
   if(btn)btn.classList.add('on');
-  if(id==='chartView')renderChart(S.data);
+  if(id==='chartView')renderChart(filteredList());
+  if(id==='trendView')tvInit();
 }
 VIEWS.forEach(v=>{document.getElementById(v).style.display=v==='rankView'?'block':'none';});
 
@@ -403,8 +433,8 @@ async function loadData(){
   }
 
   try{
-    const url='https://cschangtw.github.io/ETF/etf_data.json?t='+Date.now();
-    const res=await fetch(url,{cache:'no-store'});
+    const url='./etf_data.json?t='+Date.now();
+    const res=await fetch(url,{cache:'no-cache'});
     if(!res.ok)throw new Error('HTTP '+res.status);
     const d=await res.json();
     S.data=d.etfs||[];
@@ -430,241 +460,211 @@ document.getElementById('iBtnX').onclick=()=>document.getElementById('installToa
 document.querySelector(`th:nth-child(${S.col+1})`).classList.add('sd');
 loadData();
 
-// ═══ DETAIL MODAL ═══
-let curSym='', curMkt='', curDays=30;
+// ═══ TREND VIEW ═══
+let tvSym='', tvDays=30, tvData=[];
 
-function showDetail(sym, mkt){
-  curSym=sym; curMkt=mkt;
-  const e = S.data.find(x=>x.symbol===sym);
-  if(!e) return;
-  document.getElementById('dmSym').textContent = sym;
-  document.getElementById('dmName').textContent = e.name;
-  document.getElementById('dmPrice').textContent = e.price;
-  // badge 顏色
-  const badge = mkt==='TW'
-    ? `<span class="badge btw">台</span>`
-    : `<span class="badge bus">美</span>`;
-  document.getElementById('dmSym').innerHTML = badge + sym;
-  // 顯示 modal
-  document.getElementById('detailModal').classList.add('show');
-  // 渲染期間 Tab
-  document.querySelectorAll('.dp').forEach(b=>{
-    b.classList.toggle('on', parseInt(b.dataset.days)===curDays);
-  });
-  fetchChart(sym, mkt, curDays, e);
+function tvInit(){
+  const sel=document.getElementById('tvSymSel');
+  const prev=sel.value||tvSym||(S.data[0]&&S.data[0].symbol)||'';
+  sel.innerHTML=S.data.map(e=>{
+    const mkt=e.market==='TW'?'[台]':'[美]';
+    return `<option value="${e.symbol}" ${e.symbol===prev?'selected':''}>${mkt} ${e.symbol} ${e.name}</option>`;
+  }).join('');
+  tvSym=sel.value;
+  tvDraw();
 }
 
-function closeDetail(e){
-  if(e.target===document.getElementById('detailModal'))
-    document.getElementById('detailModal').classList.remove('show');
+function tvChangeSym(){
+  tvSym=document.getElementById('tvSymSel').value;
+  tvDraw();
+}
+
+function goTrend(sym){
+  // 切到趨勢頁並選定個股
+  swView('trendView', document.querySelector('.nb[onclick*="trendView"]'));
+  tvSym=sym;
+  const sel=document.getElementById('tvSymSel');
+  if(sel.options.length===0) tvInit();
+  else{ sel.value=sym; tvDraw(); }
 }
 
 // 期間 Tab
-document.getElementById('dmPeriods').addEventListener('click', e=>{
-  const b=e.target.closest('.dp'); if(!b) return;
-  document.querySelectorAll('.dp').forEach(x=>x.classList.remove('on'));
-  b.classList.add('on');
-  curDays = parseInt(b.dataset.days);
-  const etf = S.data.find(x=>x.symbol===curSym);
-  fetchChart(curSym, curMkt, curDays, etf);
+document.querySelector('.tv-periods').addEventListener('click',e=>{
+  const b=e.target.closest('.tvp'); if(!b)return;
+  document.querySelectorAll('.tvp').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); tvDays=parseInt(b.dataset.d); tvDraw();
 });
 
-// 計算模擬歷史數據（從現有報酬率逆推合理曲線）
-function buildHistory(etf, days){
-  const pts = [];
-  const today = new Date();
-  // 已知錨點報酬率
-  const anchors = {
-    1:   etf.ret_1d   || 0,
-    5:   etf.ret_1w   || 0,
-    21:  etf.ret_1m   || 0,
-    63:  etf.ret_3m   || 0,
-    252: etf.ret_1y   || 0,
-  };
-  // 內插：對每個日期找最近的錨點，加上隨機擾動模擬真實波動
-  const seed = etf.symbol.split('').reduce((a,c)=>a+c.charCodeAt(0),0);
-  function rand(i){ let x=Math.sin(seed*i+i*7.3)*10000; return x-Math.floor(x); }
-
+// 建立模擬歷史曲線（由報酬率錨點逆推 + 隨機擾動）
+function buildSim(etf,days){
+  const anchors={1:etf.ret_1d||0,5:etf.ret_1w||0,21:etf.ret_1m||0,
+                 63:etf.ret_3m||0,252:etf.ret_1y||0};
+  const keys=Object.keys(anchors).map(Number).sort((a,b)=>a-b);
+  const seed=etf.symbol.split('').reduce((a,c)=>a+c.charCodeAt(0),0);
+  function rnd(i){let x=Math.sin(seed*13.7+i*7.3)*9999;return x-Math.floor(x);}
+  const pts=[];
+  const today=new Date();
   for(let i=days;i>=0;i--){
-    const d = new Date(today); d.setDate(d.getDate()-i);
-    // 線性內插報酬率
-    let ret = 0;
-    const keys = Object.keys(anchors).map(Number).sort((a,b)=>a-b);
-    for(let k=0;k<keys.length-1;k++){
-      const d0=keys[k], d1=keys[k+1];
-      const r0=anchors[d0]/100, r1=anchors[d1]/100;
-      if(i<=d1 && i>=d0){
-        const t=(d1-i)/(d1-d0);
-        ret = r0+(r1-r0)*t; break;
-      } else if(i<keys[0]){
-        ret = anchors[keys[0]]/100 * (i/keys[0]);
-      } else if(i>keys[keys.length-1]){
-        ret = anchors[keys[keys.length-1]]/100;
-      }
+    const d=new Date(today); d.setDate(d.getDate()-i);
+    let ret=0;
+    for(let k=0;k<keys.length;k++){
+      const d0=k>0?keys[k-1]:0, d1=keys[k];
+      const r0=(k>0?anchors[d0]:0)/100, r1=anchors[d1]/100;
+      if(i<=d1){ret=r0+(r1-r0)*(1-(i/d1)); break;}
+      if(k===keys.length-1) ret=r1;
     }
-    // 加隨機擾動（±1.5%）
-    const noise = (rand(days-i)-0.5)*0.03;
-    const cumRet = (ret + noise) * 100;
-    pts.push({ date:d, ret: parseFloat(cumRet.toFixed(2)) });
+    const noise=(rnd(days-i)-0.48)*0.025;
+    pts.push({date:d, ret:parseFloat(((ret+noise)*100).toFixed(2))});
   }
   return pts;
 }
 
-async function fetchChart(sym, mkt, days, etf){
-  document.getElementById('dmLoading').style.display='block';
-  document.getElementById('dmSvg').style.display='none';
-  document.getElementById('dmStats').innerHTML='';
+async function tvDraw(){
+  if(!tvSym||!S.data.length) return;
+  const etf=S.data.find(e=>e.symbol===tvSym); if(!etf) return;
 
-  // 嘗試從 Yahoo Finance 抓歷史（CORS 在 GitHub Pages 可能失敗，降級用模擬數據）
-  let pts = null;
+  // 更新 header
+  const badge=etf.market==='TW'
+    ?'<span class="badge btw">台</span>':'<span class="badge bus">美</span>';
+  document.getElementById('tvSym').innerHTML=badge+tvSym;
+  document.getElementById('tvName').textContent=etf.name;
+
+  // 顯示 loading
+  document.getElementById('tvLoading').style.display='block';
+  document.getElementById('tvSvg').style.display='none';
+  document.getElementById('tvStats').innerHTML='';
+  document.getElementById('tvSrc').textContent='';
+
+  let pts=null, srcLabel='';
+
+  // 嘗試 Yahoo Finance
   try{
-    const ticker = mkt==='TW' ? sym+'.TW' : sym;
-    const end = Math.floor(Date.now()/1000);
-    const start = end - days*86400;
-    const url = `https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?interval=1d&period1=${start}&period2=${end}`;
-    const res = await fetch(url, {signal: AbortSignal.timeout(6000)});
+    const ticker=etf.market==='TW'?tvSym+'.TW':tvSym;
+    const end=Math.floor(Date.now()/1000);
+    const start=end-tvDays*86400;
+    const url=`https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?interval=1d&period1=${start}&period2=${end}&corsDomain=finance.yahoo.com`;
+    const res=await fetch(url,{signal:AbortSignal.timeout(7000)});
     if(res.ok){
-      const d = await res.json();
-      const ts = d.chart?.result?.[0]?.timestamp || [];
-      const cl = d.chart?.result?.[0]?.indicators?.quote?.[0]?.close || [];
-      if(ts.length>1 && cl[0]){
-        const base = cl[0];
-        pts = ts.map((t,i)=>({
-          date: new Date(t*1000),
-          ret: cl[i]!=null ? parseFloat(((cl[i]-base)/base*100).toFixed(2)) : null
+      const j=await res.json();
+      const ts=j.chart?.result?.[0]?.timestamp||[];
+      const cl=j.chart?.result?.[0]?.indicators?.quote?.[0]?.close||[];
+      if(ts.length>2&&cl[0]!=null){
+        const base=cl.find(v=>v!=null);
+        pts=ts.map((t,i)=>({
+          date:new Date(t*1000),
+          ret:cl[i]!=null?parseFloat(((cl[i]-base)/base*100).toFixed(2)):null
         })).filter(p=>p.ret!=null);
+        srcLabel='數據來源：Yahoo Finance（即時）';
       }
     }
-  }catch(e){ /* 降級 */ }
+  }catch(e){}
 
-  // 降級：用報酬率逆推模擬曲線
-  if(!pts || pts.length<5) pts = buildHistory(etf, days);
+  // 降級：模擬曲線
+  if(!pts||pts.length<5){
+    pts=buildSim(etf,tvDays);
+    srcLabel='⚠ 即時數據不可用，顯示模擬曲線（依報酬率估算）';
+  }
 
-  drawChart(pts, etf);
+  tvData=pts;
+  drawTvChart(pts,etf,srcLabel);
 }
 
-function drawChart(pts, etf){
-  document.getElementById('dmLoading').style.display='none';
-  const svg = document.getElementById('dmSvg');
+function drawTvChart(pts,etf,srcLabel){
+  document.getElementById('tvLoading').style.display='none';
+  document.getElementById('tvSrc').textContent=srcLabel;
+
+  const svg=document.getElementById('tvSvg');
   svg.style.display='block';
 
-  const W=340, H=160, PL=36, PR=10, PT=14, PB=28;
+  const W=340,H=170,PL=40,PR=8,PT=14,PB=26;
   const cW=W-PL-PR, cH=H-PT-PB;
+  const rets=pts.map(p=>p.ret);
+  const minR=Math.min(...rets,0), maxR=Math.max(...rets,0);
+  const rng=maxR-minR||1;
+  const xS=i=>PL+(i/(pts.length-1))*cW;
+  const yS=v=>PT+(1-(v-minR)/rng)*cH;
+  const last=rets[rets.length-1];
+  const color=last>=0?'#00C896':'#FF4757';
 
-  const rets = pts.map(p=>p.ret);
-  const minR = Math.min(...rets, 0);
-  const maxR = Math.max(...rets, 0);
-  const rng  = maxR-minR || 1;
-
-  const xS = i => PL + (i/(pts.length-1))*cW;
-  const yS = v => PT + (1-(v-minR)/rng)*cH;
-  const isPos = pts[pts.length-1].ret >= 0;
-  const color = isPos ? '#00C896' : '#FF4757';
-
-  // 格線
+  // 格線 & Y 軸標籤
   let grid='';
-  [-2,-1,0,1,2].forEach(n=>{
-    const v = minR + (n+2)/4*rng;
-    const y = yS(v);
-    const cls = Math.abs(v)<0.01 ? 'zero-line' : 'grid-line';
-    grid += `<line class="${cls}" x1="${PL}" x2="${W-PR}" y1="${y}" y2="${y}"/>`;
-    grid += `<text class="dm-label" x="${PL-3}" y="${y+3}" text-anchor="end">${v>0?'+':''}${v.toFixed(0)}%</text>`;
+  const steps=5;
+  for(let i=0;i<=steps;i++){
+    const v=minR+(i/steps)*rng;
+    const y=yS(v);
+    const isZero=Math.abs(v)<rng*0.05;
+    grid+=`<line x1="${PL}" x2="${W-PR}" y1="${y}" y2="${y}" stroke="${isZero?'#8892B0':'#1E3A5F'}" stroke-width="${isZero?1:0.7}" stroke-dasharray="${isZero?'none':'4,4'}"/>`;
+    grid+=`<text x="${PL-4}" y="${y+3.5}" text-anchor="end" fill="#8892B0" font-size="9">${v>0?'+':''}${v.toFixed(0)}%</text>`;
+  }
+
+  // 面積 + 折線
+  let aD=`M${xS(0)},${yS(pts[0].ret)}`;
+  let lD=`M${xS(0)},${yS(pts[0].ret)}`;
+  pts.forEach((_,i)=>{
+    if(i===0)return;
+    aD+=` L${xS(i)},${yS(pts[i].ret)}`;
+    lD+=` L${xS(i)},${yS(pts[i].ret)}`;
   });
+  aD+=` L${xS(pts.length-1)},${yS(0)} L${xS(0)},${yS(0)} Z`;
 
-  // 面積
-  let areaD = `M${xS(0)},${yS(0)}`;
-  pts.forEach((_,i)=>{ if(i>0) areaD+=` L${xS(i)},${yS(pts[i].ret)}`; });
-  areaD += ` L${xS(pts.length-1)},${yS(0)} L${xS(0)},${yS(0)} Z`;
-
-  // 折線
-  let lineD = `M${xS(0)},${yS(pts[0].ret)}`;
-  pts.forEach((_,i)=>{ if(i>0) lineD+=` L${xS(i)},${yS(pts[i].ret)}`; });
-
-  // X 軸日期（5 個標籤）
-  let xLabels='';
+  // X 軸標籤（5個）
+  let xLbl='';
   [0,0.25,0.5,0.75,1].forEach(t=>{
     const i=Math.round(t*(pts.length-1));
     const d=pts[i].date;
-    const label=`${d.getMonth()+1}/${d.getDate()}`;
-    xLabels+=`<text class="dm-label" x="${xS(i)}" y="${H-6}" text-anchor="middle">${label}</text>`;
+    const lbl=`${d.getMonth()+1}/${d.getDate()}`;
+    xLbl+=`<text x="${xS(i)}" y="${H-6}" text-anchor="middle" fill="#8892B0" font-size="9">${lbl}</text>`;
   });
 
-  // 互動觸控點（每5個取1個）
+  // 互動觸控層（透明寬矩形收手指事件）
+  const step=Math.max(1,Math.floor(pts.length/60));
   let dots='';
   pts.forEach((p,i)=>{
-    if(i%(Math.max(1,Math.floor(pts.length/20)))===0){
-      dots+=`<circle cx="${xS(i)}" cy="${yS(p.ret)}" r="3" fill="${color}" stroke="var(--bg2)" stroke-width="2" style="cursor:crosshair"
-        onmouseover="showTip(event,'${p.date.toLocaleDateString('zh-TW',{month:'numeric',day:'numeric'})}','${p.ret>0?'+':''}${p.ret}%')"
-        ontouchstart="showTip(event,'${p.date.toLocaleDateString('zh-TW',{month:'numeric',day:'numeric'})}','${p.ret>0?'+':''}${p.ret}%')"
-        onmouseleave="hideTip()" ontouchend="hideTip()"/>`;
-    }
+    if(i%step!==0&&i!==pts.length-1)return;
+    const cx=xS(i),cy=yS(p.ret);
+    const lbl=`${p.date.getMonth()+1}/${p.date.getDate()} ${p.ret>0?'+':''}${p.ret}%`;
+    dots+=`<circle cx="${cx}" cy="${cy}" r="3.5" fill="${color}" stroke="#0D1B2A" stroke-width="2" opacity="0.85"
+      onmouseover="tvTip('${lbl}')" ontouchstart="tvTip('${lbl}')"
+      onmouseleave="tvHide()" ontouchend="tvHide()"/>`;
   });
 
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
-  svg.innerHTML = `
+  svg.innerHTML=`
     <defs>
-      <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="${color}" stop-opacity=".4"/>
+      <linearGradient id="tvG" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="${color}" stop-opacity=".35"/>
         <stop offset="100%" stop-color="${color}" stop-opacity=".02"/>
       </linearGradient>
-      <clipPath id="chartClip"><rect x="${PL}" y="${PT}" width="${cW}" height="${cH}"/></clipPath>
+      <clipPath id="tvClip"><rect x="${PL}" y="${PT}" width="${cW}" height="${cH}"/></clipPath>
     </defs>
     ${grid}
-    <g clip-path="url(#chartClip)">
-      <path d="${areaD}" fill="url(#areaGrad)"/>
-      <path class="line" d="${lineD}" stroke="${color}"/>
+    <g clip-path="url(#tvClip)">
+      <path d="${aD}" fill="url(#tvG)"/>
+      <path d="${lD}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
       ${dots}
     </g>
-    ${xLabels}
-  `;
+    ${xLbl}`;
 
-  // 統計卡片
-  const last=pts[pts.length-1].ret, first=pts[0].ret;
-  const maxPt=Math.max(...rets), minPt=Math.min(...rets);
-  const fr2=v=>v==null?'—':(v>0?'+':'')+v.toFixed(2)+'%';
+  // 統計
+  const maxV=Math.max(...rets), minV=Math.min(...rets);
+  const avg=rets.reduce((a,b)=>a+b,0)/rets.length;
+  const fr2=v=>(v>0?'+':'')+v.toFixed(2)+'%';
   const clr=v=>v>=0?'#00E5A0':'#FF6B7A';
-  document.getElementById('dmStats').innerHTML=`
-    <div class="ds"><div class="ds-l">區間漲跌</div><div class="ds-v" style="color:${clr(last)}">${fr2(last)}</div></div>
-    <div class="ds"><div class="ds-l">區間最高</div><div class="ds-v" style="color:#00E5A0">${fr2(maxPt)}</div></div>
-    <div class="ds"><div class="ds-l">區間最低</div><div class="ds-v" style="color:${clr(minPt)}">${fr2(minPt)}</div></div>
+  document.getElementById('tvRet').textContent=fr2(last);
+  document.getElementById('tvRet').style.color=clr(last);
+  document.getElementById('tvStats').innerHTML=`
+    <div class="tvs"><div class="tvs-l">區間漲跌</div><div class="tvs-v" style="color:${clr(last)}">${fr2(last)}</div></div>
+    <div class="tvs"><div class="tvs-l">區間最高</div><div class="tvs-v" style="color:#00E5A0">${fr2(maxV)}</div></div>
+    <div class="tvs"><div class="tvs-l">區間最低</div><div class="tvs-v" style="color:${clr(minV)}">${fr2(minV)}</div></div>
   `;
 }
 
-function showTip(e, date, val){
-  const tip=document.getElementById('dmTip');
-  tip.innerHTML=`<strong>${date}</strong> ${val}`;
-  tip.style.opacity='1';
+function tvTip(txt){
+  const el=document.getElementById('tvTip');
+  el.textContent=txt; el.style.opacity='1';
 }
-function hideTip(){ document.getElementById('dmTip').style.opacity='0'; }
+function tvHide(){ document.getElementById('tvTip').style.opacity='0'; }
 
 </script>
-
-<!-- ── DETAIL MODAL ── -->
-<div id="detailModal" onclick="closeDetail(event)">
-  <div class="dm-panel" id="dmPanel">
-    <div class="dm-drag"></div>
-    <div class="dm-header">
-      <div>
-        <div class="dm-sym" id="dmSym">—</div>
-        <div class="dm-name" id="dmName">—</div>
-      </div>
-      <div class="dm-price" id="dmPrice">—</div>
-      <button class="dm-close" onclick="document.getElementById('detailModal').classList.remove('show')">✕</button>
-    </div>
-    <div class="dm-periods" id="dmPeriods">
-      <button class="dp on" data-days="30">1個月</button>
-      <button class="dp" data-days="90">3個月</button>
-      <button class="dp" data-days="180">6個月</button>
-      <button class="dp" data-days="365">1年</button>
-      <button class="dp" data-days="730">2年</button>
-    </div>
-    <div class="dm-chart">
-      <div class="dm-loading" id="dmLoading"><span class="dm-spinner"></span>載入中…</div>
-      <svg id="dmSvg" style="display:none" viewBox="0 0 340 160" preserveAspectRatio="none"></svg>
-      <div class="dm-tooltip" id="dmTip"></div>
-    </div>
-    <div class="dm-stats" id="dmStats"></div>
-  </div>
-</div>
 </body>
 </html>
