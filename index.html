@@ -66,7 +66,7 @@ header{background:linear-gradient(160deg,var(--bg2),var(--bg4));border-bottom:2p
 .tab:hover{border-color:var(--accent);color:var(--accent)}
 .tab.on{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:700}
 .mtab[data-m="TW"].on{background:rgba(240,165,0,.2);border-color:var(--tw);color:var(--tw)}
-.mtab[data-m="US"].on{background:rgba(74,144,226,.2);border-color:var(--us);color:var(--us)}
+.mtab[data-m="OTHER"].on{background:rgba(160,80,220,.2);border-color:#A050DC;color:#A050DC}
 .mtab[data-m="all"].on{background:rgba(232,240,254,.1);border-color:var(--text);color:var(--text)}
 .rc{font-size:12px;color:var(--muted);margin-left:auto;white-space:nowrap}
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
@@ -87,6 +87,7 @@ td.vo{color:var(--muted);font-size:11px}
 .badge{display:inline-block;border-radius:4px;padding:1px 4px;font-size:9px;font-weight:700;vertical-align:middle;margin-right:3px}
 .btw{background:rgba(240,165,0,.15);color:var(--tw);border:1px solid var(--tw)}
 .bus{background:rgba(74,144,226,.15);color:var(--us);border:1px solid var(--us)}
+.both{background:rgba(160,80,220,.15);color:#A050DC;border:1px solid #A050DC}
 .sk td div{height:13px;border-radius:4px;background:linear-gradient(90deg,var(--bg2) 25%,var(--bg3) 50%,var(--bg2) 75%);background-size:200% 100%;animation:sh 1.4s infinite}
 @keyframes sh{0%{background-position:200% 0}100%{background-position:-200% 0}}
 #chartView{padding:14px;display:none}
@@ -162,7 +163,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:16px 18p
   <div class="logo"><img src="icon-192.png" alt="ETF排名"></div>
   <div>
     <div class="h-title">ETF 獲利排名榜</div>
-    <div class="h-sub">台股 30 × 美股 30 × 每日自動更新</div>
+    <div class="h-sub">台股 ETF 全部 + 其他型 30 檔</div>
   </div>
   <div class="h-right">
     <div class="live-pill"><span class="dot"></span><span id="updTime">載入中…</span></div>
@@ -172,7 +173,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:16px 18p
 
 <div id="rankView">
   <div class="cards">
-    <div class="card cb"><div class="cl">📦 追蹤檔數</div><div class="cv b" id="cCount">—</div><div class="cs">台股 + 美股 ETF</div></div>
+    <div class="card cb"><div class="cl">📦 追蹤檔數</div><div class="cv b" id="cCount">—</div><div class="cs">台股 + 其他型 ETF</div></div>
     <div class="card cg"><div class="cl">🏆 月報酬最高</div><div class="cv g" id="cMax">—</div><div class="cs" id="cMaxS">—</div></div>
     <div class="card cr"><div class="cl">📉 月報酬最低</div><div class="cv r" id="cMin">—</div><div class="cs" id="cMinS">—</div></div>
     <div class="card cd"><div class="cl">📈 月報酬平均</div><div class="cv" id="cAvg">—</div><div class="cs" id="cAvgS">—</div></div>
@@ -196,8 +197,8 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:16px 18p
       </div>
       <div class="tabs" id="mTabs">
         <button class="tab mtab on" data-m="all">全部</button>
-        <button class="tab mtab" data-m="TW">台股</button>
-        <button class="tab mtab" data-m="US">美股</button>
+        <button class="tab mtab" data-m="TW">台股ETF</button>
+        <button class="tab mtab" data-m="OTHER">其他型</button>
       </div>
     </div>
   </div>
@@ -225,7 +226,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:16px 18p
   </div>
   <footer>
     <div class="fg">
-      <div><strong>數據來源</strong>Yahoo Finance（yfinance）<br>台股 .TW 格式，美股直接代號<br>每個交易日自動更新 2 次</div>
+      <div><strong>數據來源</strong>Yahoo Finance（yfinance）<br>台股全部 83 檔 + 其他型（債/商品/槓桿）30 檔<br>每個交易日自動更新 2 次</div>
       <div><strong>報酬率計算</strong>日 1交易日｜週 5交易日<br>月 21交易日｜季 63交易日<br>年 252交易日｜年初至今 1/1 起算</div>
       <div><strong>PWA 功能</strong>離線快取 ✓｜主畫面安裝 ✓<br>iOS Safari / Android Chrome</div>
     </div>
@@ -240,16 +241,17 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:16px 18p
 
 <div id="aboutView">
   <h2>關於 ETF 獲利排名榜</h2>
-  <p>追蹤台股 30 檔 + 美股 30 檔共 60 檔主流 ETF，提供六個時間維度報酬率比較。</p>
+  <p>追蹤台股全部 83 檔 + 其他型 30 檔共 113 檔主流 ETF，提供六個時間維度報酬率比較。</p>
   <div class="ag">
     <div class="ac"><h3>數據更新</h3><p>GitHub Actions 每個交易日自動執行，台股收盤後（15:30）與美股收盤後（次日 05:30）各更新一次。</p></div>
     <div class="ac"><h3>PWA 特性</h3><p>可加入手機主畫面，支援離線快取，體驗接近原生 App。</p></div>
-    <div class="ac"><h3>台股 ETF</h3><p>0050、0056、00878 等 30 檔，涵蓋寬基、高股息、半導體、AI、ESG 等主題。</p></div>
-    <div class="ac"><h3>美股 ETF</h3><p>SPY、QQQ、SOXX、ARKK 等 30 檔，涵蓋大盤、科技、債券、黃金、槓桿型。</p></div>
+    <div class="ac"><h3>台股 ETF</h3><p>0050、0056、00878 等共 83 檔，涵蓋寬基、高股息、半導體、AI、ESG、主動型等全部台股 ETF。</p></div>
+    <div class="ac"><h3>美股 ETF</h3><p>美債、黃金、槓桿反向等交易活絡的其他型 ETF 共 30 檔（00679B、00635U、00670L 等）。</p></div>
   </div>
   <div>
     <span class="tag">GitHub Pages 部署</span>
     <span class="tag">yfinance 爬取</span>
+    <span class="tag">台股全部 83 檔</span>
     <span class="tag">每日自動化</span>
     <span class="tag">PWA 離線可用</span>
   </div>
@@ -331,7 +333,11 @@ function render(){
     });
   }
   document.getElementById('tb').innerHTML=list.map((e,i)=>{
-    const b=e.market==='TW'?'<span class="badge btw">台</span>':'<span class="badge bus">美</span>';
+    const b=e.market==='TW'
+      ?'<span class="badge btw">台</span>'
+      :e.market==='OTHER'
+      ?'<span class="badge both">他</span>'
+      :'<span class="badge bus">美</span>';
     return `<tr onclick="goTrend('${e.symbol}')" style="cursor:pointer">
       <td class="rk">${i+1}</td>
       <td>${b}<strong style="font-size:13px">${e.symbol}</strong></td>
@@ -467,7 +473,7 @@ function tvInit(){
   const sel=document.getElementById('tvSymSel');
   const prev=sel.value||tvSym||(S.data[0]&&S.data[0].symbol)||'';
   sel.innerHTML=S.data.map(e=>{
-    const mkt=e.market==='TW'?'[台]':'[美]';
+    const mkt=e.market==='TW'?'[台]':e.market==='OTHER'?'[他]':'[美]';
     return `<option value="${e.symbol}" ${e.symbol===prev?'selected':''}>${mkt} ${e.symbol} ${e.name}</option>`;
   }).join('');
   tvSym=sel.value;
@@ -525,7 +531,10 @@ async function tvDraw(){
 
   // 更新 header
   const badge=etf.market==='TW'
-    ?'<span class="badge btw">台</span>':'<span class="badge bus">美</span>';
+    ?'<span class="badge btw">台</span>'
+    :etf.market==='OTHER'
+    ?'<span class="badge both">他</span>'
+    :'<span class="badge bus">美</span>';
   document.getElementById('tvSym').innerHTML=badge+tvSym;
   document.getElementById('tvName').textContent=etf.name;
 
