@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-27T00:58:52Z",
-  "generated_at_tw": "2026-08-27 00:58",
+  "generated_at": "2026-08-27T18:22:48Z",
+  "generated_at_tw": "2026-08-27 18:22",
   "count": 79,
   "use_fallback": false,
   "failed_symbols": [
@@ -48,8 +48,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": null,
-      "volume": 28728813,
-      "data_date": "2026-08-26"
+      "volume": 33812356,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00401A",
@@ -62,8 +62,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": null,
-      "volume": 6348696,
-      "data_date": "2026-08-26"
+      "volume": 4758458,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00403A",
@@ -76,8 +76,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": null,
-      "volume": 248093686,
-      "data_date": "2026-08-26"
+      "volume": 259190379,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00404A",
@@ -90,8 +90,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": null,
-      "volume": 1783957,
-      "data_date": "2026-08-26"
+      "volume": 3730516,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00405A",
@@ -104,8 +104,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": null,
-      "volume": 69247081,
-      "data_date": "2026-08-26"
+      "volume": 63648014,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00406A",
@@ -118,8 +118,8 @@
       "ret_3m": null,
       "ret_1y": null,
       "ret_ytd": null,
-      "volume": 198027692,
-      "data_date": "2026-08-26"
+      "volume": 184376727,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00981A",
@@ -132,8 +132,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 150624569,
-      "data_date": "2026-08-26"
+      "volume": 134766299,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00982A",
@@ -146,8 +146,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 20452517,
-      "data_date": "2026-08-26"
+      "volume": 20932214,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00983A",
@@ -160,8 +160,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 3384982,
-      "data_date": "2026-08-26"
+      "volume": 1741744,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00984A",
@@ -174,8 +174,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 4058910,
-      "data_date": "2026-08-26"
+      "volume": 4593863,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00985A",
@@ -188,8 +188,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 3064196,
-      "data_date": "2026-08-26"
+      "volume": 4356877,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00986A",
@@ -202,8 +202,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": NaN,
-      "volume": 154527,
-      "data_date": "2026-08-26"
+      "volume": 317107,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00987A",
@@ -216,8 +216,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": NaN,
-      "volume": 3863144,
-      "data_date": "2026-08-26"
+      "volume": 3238654,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00988A",
@@ -230,8 +230,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": NaN,
-      "volume": 22787555,
-      "data_date": "2026-08-26"
+      "volume": 24727780,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00989A",
@@ -244,8 +244,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": NaN,
-      "volume": 551105,
-      "data_date": "2026-08-26"
+      "volume": 2897678,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00990A",
@@ -258,8 +258,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": NaN,
-      "volume": 9528826,
-      "data_date": "2026-08-26"
+      "volume": 12120058,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00991A",
@@ -272,8 +272,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": NaN,
-      "volume": 72505272,
-      "data_date": "2026-08-26"
+      "volume": 72959113,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00992A",
@@ -286,8 +286,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": NaN,
-      "volume": 34981700,
-      "data_date": "2026-08-26"
+      "volume": 57315311,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "009816",
@@ -300,8 +300,8 @@
       "ret_3m": NaN,
       "ret_1y": null,
       "ret_ytd": null,
-      "volume": 84378833,
-      "data_date": "2026-08-26"
+      "volume": 88419494,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "0050",
@@ -314,8 +314,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 88577541,
-      "data_date": "2026-08-26"
+      "volume": 67805979,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "0051",
@@ -328,8 +328,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 50691,
-      "data_date": "2026-08-26"
+      "volume": 35291,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "0052",
@@ -342,8 +342,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 12121966,
-      "data_date": "2026-08-26"
+      "volume": 13583166,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "0053",
@@ -356,8 +356,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 34068,
-      "data_date": "2026-08-26"
+      "volume": 49052,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "0055",
@@ -370,8 +370,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 412934,
-      "data_date": "2026-08-26"
+      "volume": 156114,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "006208",
@@ -384,8 +384,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 1919661,
-      "data_date": "2026-08-26"
+      "volume": 1863232,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00733",
@@ -398,8 +398,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 270928,
-      "data_date": "2026-08-26"
+      "volume": 340400,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00850",
@@ -412,8 +412,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 910493,
-      "data_date": "2026-08-26"
+      "volume": 877514,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00905",
@@ -426,8 +426,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 621991,
-      "data_date": "2026-08-26"
+      "volume": 769605,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "0056",
@@ -440,8 +440,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 30972915,
-      "data_date": "2026-08-26"
+      "volume": 37287080,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00692",
@@ -454,8 +454,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 873474,
-      "data_date": "2026-08-26"
+      "volume": 358314,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00701",
@@ -468,8 +468,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 549326,
-      "data_date": "2026-08-26"
+      "volume": 270770,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00730",
@@ -482,8 +482,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 136611,
-      "data_date": "2026-08-26"
+      "volume": 42032,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00878",
@@ -496,8 +496,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 26637516,
-      "data_date": "2026-08-26"
+      "volume": 26152875,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00900",
@@ -510,8 +510,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 5248623,
-      "data_date": "2026-08-26"
+      "volume": 7858104,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00907",
@@ -524,8 +524,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 1641806,
-      "data_date": "2026-08-26"
+      "volume": 838028,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00915",
@@ -538,8 +538,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 1820350,
-      "data_date": "2026-08-26"
+      "volume": 989753,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00919",
@@ -552,8 +552,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 59480918,
-      "data_date": "2026-08-26"
+      "volume": 56349352,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00929",
@@ -566,8 +566,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 22064353,
-      "data_date": "2026-08-26"
+      "volume": 22569865,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00934",
@@ -580,8 +580,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 3490664,
-      "data_date": "2026-08-26"
+      "volume": 2578099,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00936",
@@ -594,8 +594,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 1314430,
-      "data_date": "2026-08-26"
+      "volume": 304483,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00940",
@@ -608,8 +608,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 17332635,
-      "data_date": "2026-08-26"
+      "volume": 11981653,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00943",
@@ -622,8 +622,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 22940,
-      "data_date": "2026-08-26"
+      "volume": 23289,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "009802",
@@ -636,8 +636,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 1952965,
-      "data_date": "2026-08-26"
+      "volume": 2225459,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00830",
@@ -650,8 +650,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 8685109,
-      "data_date": "2026-08-26"
+      "volume": 7805782,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00881",
@@ -664,8 +664,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 19435420,
-      "data_date": "2026-08-26"
+      "volume": 18092302,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00891",
@@ -678,8 +678,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 11566875,
-      "data_date": "2026-08-26"
+      "volume": 8452225,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00893",
@@ -692,8 +692,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 677604,
-      "data_date": "2026-08-26"
+      "volume": 521879,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00896",
@@ -706,8 +706,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 1655195,
-      "data_date": "2026-08-26"
+      "volume": 1774336,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00902",
@@ -720,8 +720,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 567897,
-      "data_date": "2026-08-26"
+      "volume": 293578,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00904",
@@ -734,8 +734,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 886112,
-      "data_date": "2026-08-26"
+      "volume": 601110,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00913",
@@ -748,8 +748,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 952232,
-      "data_date": "2026-08-26"
+      "volume": 1170975,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00939",
@@ -762,8 +762,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 4370540,
-      "data_date": "2026-08-26"
+      "volume": 2275542,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00944",
@@ -776,8 +776,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 157161,
-      "data_date": "2026-08-26"
+      "volume": 353182,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00946",
@@ -790,8 +790,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 2111455,
-      "data_date": "2026-08-26"
+      "volume": 2147906,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00947",
@@ -804,8 +804,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 5586893,
-      "data_date": "2026-08-26"
+      "volume": 5864439,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00910",
@@ -818,8 +818,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 504134,
-      "data_date": "2026-08-26"
+      "volume": 739723,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00916",
@@ -832,8 +832,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 258441,
-      "data_date": "2026-08-26"
+      "volume": 517992,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00917",
@@ -846,8 +846,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 665767,
-      "data_date": "2026-08-26"
+      "volume": 685292,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00918",
@@ -860,8 +860,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 10084600,
-      "data_date": "2026-08-26"
+      "volume": 10759867,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00920",
@@ -874,8 +874,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 74804,
-      "data_date": "2026-08-26"
+      "volume": 211161,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00921",
@@ -888,8 +888,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 141830,
-      "data_date": "2026-08-26"
+      "volume": 60558,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00922",
@@ -902,8 +902,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 8381012,
-      "data_date": "2026-08-26"
+      "volume": 12229666,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00923",
@@ -916,8 +916,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 4409858,
-      "data_date": "2026-08-26"
+      "volume": 3606709,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00924",
@@ -930,8 +930,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 1296961,
-      "data_date": "2026-08-26"
+      "volume": 1305644,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00926",
@@ -944,8 +944,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 470038,
-      "data_date": "2026-08-26"
+      "volume": 742141,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00927",
@@ -958,8 +958,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 6719154,
-      "data_date": "2026-08-26"
+      "volume": 8966235,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00930",
@@ -972,8 +972,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 519040,
-      "data_date": "2026-08-26"
+      "volume": 156254,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00932",
@@ -986,8 +986,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 606202,
-      "data_date": "2026-08-26"
+      "volume": 497140,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00935",
@@ -1000,8 +1000,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 4790869,
-      "data_date": "2026-08-26"
+      "volume": 7527137,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00938",
@@ -1014,8 +1014,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 1858306,
-      "data_date": "2026-08-26"
+      "volume": 273919,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00646",
@@ -1028,8 +1028,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 3053277,
-      "data_date": "2026-08-26"
+      "volume": 2738368,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00757",
@@ -1042,8 +1042,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 563101,
-      "data_date": "2026-08-26"
+      "volume": 462112,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00662",
@@ -1056,8 +1056,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 3535530,
-      "data_date": "2026-08-26"
+      "volume": 1772894,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00670L",
@@ -1070,8 +1070,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 513988,
-      "data_date": "2026-08-26"
+      "volume": 496632,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00631L",
@@ -1084,8 +1084,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 176400567,
-      "data_date": "2026-08-26"
+      "volume": 195191077,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00632R",
@@ -1098,8 +1098,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 192673531,
-      "data_date": "2026-08-26"
+      "volume": 191653833,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "006205",
@@ -1112,8 +1112,8 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 204397,
-      "data_date": "2026-08-26"
+      "volume": 101276,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00635U",
@@ -1126,22 +1126,22 @@
       "ret_3m": NaN,
       "ret_1y": NaN,
       "ret_ytd": NaN,
-      "volume": 5321715,
-      "data_date": "2026-08-26"
+      "volume": 3732466,
+      "data_date": "2026-08-27"
     },
     {
       "symbol": "00682U",
       "name": "富邦石油",
-      "price": 20.36,
+      "price": NaN,
       "market": "OTHER",
-      "ret_1d": 0.1,
-      "ret_1w": -0.63,
-      "ret_1m": -2.12,
-      "ret_3m": -0.15,
-      "ret_1y": 1.5,
-      "ret_ytd": 0.99,
-      "volume": 3000,
-      "data_date": "2026-08-25"
+      "ret_1d": NaN,
+      "ret_1w": NaN,
+      "ret_1m": NaN,
+      "ret_3m": NaN,
+      "ret_1y": NaN,
+      "ret_ytd": NaN,
+      "volume": 1000,
+      "data_date": "2026-08-27"
     }
   ]
 }
