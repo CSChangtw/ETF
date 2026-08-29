@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-28T19:31:47Z",
-  "generated_at_tw": "2026-08-28 19:31",
-  "count": 80,
+  "generated_at": "2026-08-29T03:16:07Z",
+  "generated_at_tw": "2026-08-29 03:16",
+  "count": 79,
   "use_fallback": false,
   "failed_symbols": [
     "006201",
@@ -9,6 +9,7 @@
     "00945",
     "00858",
     "00888",
+    "00925",
     "00931",
     "00933",
     "00942",
@@ -931,20 +932,6 @@
       "ret_ytd": NaN,
       "volume": 1019369,
       "data_date": "2026-08-28"
-    },
-    {
-      "symbol": "00925",
-      "name": "元大台灣高息低波",
-      "price": 16.1,
-      "market": "TW",
-      "ret_1d": 0.0,
-      "ret_1w": 2.68,
-      "ret_1m": 4.55,
-      "ret_3m": -6.23,
-      "ret_1y": null,
-      "ret_ytd": 0.0,
-      "volume": 0,
-      "data_date": "2025-06-10"
     },
     {
       "symbol": "00926",
