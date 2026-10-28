@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-27T13:29:07Z",
-  "generated_at_tw": "2026-10-27 13:29",
+  "generated_at": "2026-10-28T00:40:03Z",
+  "generated_at_tw": "2026-10-28 00:40",
   "count": 79,
   "use_fallback": false,
   "failed_symbols": [
@@ -518,12 +518,12 @@
       "name": "永豐優息存股",
       "price": 18.38,
       "market": "TW",
-      "ret_1d": -1.29,
-      "ret_1w": -0.97,
-      "ret_1m": 2.51,
-      "ret_3m": 12.74,
-      "ret_1y": 26.03,
-      "ret_ytd": 26.77,
+      "ret_1d": 0.15,
+      "ret_1w": 0.48,
+      "ret_1m": 4.01,
+      "ret_3m": 14.39,
+      "ret_1y": 27.87,
+      "ret_ytd": 28.62,
       "volume": 614928,
       "data_date": "2026-10-27"
     },
@@ -760,7 +760,7 @@
       "ret_1w": 1.53,
       "ret_1m": 4.62,
       "ret_3m": 18.05,
-      "ret_1y": 89.36,
+      "ret_1y": 89.37,
       "ret_ytd": 80.7,
       "volume": 3585208,
       "data_date": "2026-10-27"
